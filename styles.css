@@ -161,11 +161,12 @@ section {
   margin: auto;
 }
 
-section h3 {
-  font-size: 1.8rem;
-  color: #1b1f3b;
-  margin-bottom: 1rem;
+.section-title {
+  text-align: center;
   font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #1b1f3b;
 }
 
 section p {
