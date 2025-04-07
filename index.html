@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGILDATA - Empowering Businesses with Technology Solutions</title>
+    <!-- Font Import -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Animation Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <h1 class="animate_animated animate_fadeInDown">AGILDATA</h1>
+        </div>
+        <p class="header-subtitle">Empowering Businesses with Technology Solutions</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Who We Are?</a>
+        <a href="#about">What We Do?</a>
+        <a href="#services">Careers</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content animate_animated animate_fadeInDown">
+            <h2>Welcome to AGILDATA</h2>
+            <p>Transforming data into actionable insights, creating user-centric digital experiences, and delivering tailored software solutions.</p>
+        </div>
+    </section>
+
+    <!-- Who We Are? -->
+    <section id="home" class="content">
+        <h2>Who We Are?</h2>
+        <p class="animate-on-scroll">At AGILDATA, we are committed to providing holistic support through skilled manpower and innovative products, ensuring our clients achieve their strategic goals with efficiency and excellence.</p>
+    </section>
+
+    <!-- What We Do? -->
+    <section id="about" class="content">
+        <h2>What We Do?</h2>
+        <p class="animate-on-scroll">We specialize in a range of services including data analytics, UI/UX design, website development, custom software projects, and manpower support. Our goal is to help businesses thrive in the digital age by offering cutting-edge technology solutions.</p>
+    </section>
+
+    <!-- Careers -->
+    <section id="services" class="content">
+        <h2>Careers</h2>
+        <p class="animate-on-scroll">Join our team of experts and work on exciting projects that push the boundaries of technology and design. We are always looking for talented individuals who share our passion for innovation and excellence.</p>
+        <div class="service-box animate-on-scroll">
+            <h3>Data Analyst</h3>
+            <p>Analyze complex datasets and provide actionable insights to drive business growth.</p>
+        </div>
+        <div class="service-box animate-on-scroll">
+            <h3>UI/UX Designer</h3>
+            <p>Create intuitive and engaging user interfaces that enhance customer satisfaction.</p>
+        </div>
+        <div class="service-box animate-on-scroll">
+            <h3>Web Developer</h3>
+            <p>Design and develop modern, responsive websites tailored to client needs.</p>
+        </div>
+        <div class="service-box animate-on-scroll">
+            <h3>Software Engineer</h3>
+            <p>Develop custom software solutions from concept to deployment.</p>
+        </div>
+        <div class="service-box animate-on-scroll">
+            <h3>Project Manager</h3>
+            <p>Lead teams and ensure successful delivery of technology projects.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="content">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:theagildata@gmail.com">theagildata@gmail.com</a></p>
+        <p>Phone: +1234567890</p>
+        <p>Address: [Insert Address Here]</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 AGILDATA. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Scroll Animation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
